@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -17,54 +17,79 @@ header {
     text-align: center;
 }
 
-.profile img {
+header img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
 }
 
-.profile h1 {
+header h1 {
+    font-size: 2.5rem;
     margin-top: 10px;
-    font-size: 2rem;
 }
 
 .about, .projects, .contact {
-    padding: 20px;
-    margin: 20px auto;
     max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .about h2, .projects h2, .contact h2 {
     text-align: center;
+    font-size: 1.8rem;
     margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #444;
+}
+
+.about p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #666;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .project {
     background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 30%;
 }
 
-.project h3 a {
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
     color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .project p {
     font-size: 1rem;
     color: #666;
-    margin-bottom: 15px;
 }
 
 .contact ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 .contact ul li {
